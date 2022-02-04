@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=~/pokeapp/pokedex.csv
+FILE=~GitHub/pokeapp/pokedex.csv
 
 usage() {
 	echo "$0 <command> [<args>]"
