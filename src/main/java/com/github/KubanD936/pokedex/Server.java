@@ -19,7 +19,9 @@ public class Server {
                     PrintWriter out = new PrintWriter(socket.getOutputStream(), autoFlush: true);
                     out.println("HTTP1.1 200 Ok");
                     out.println();
-                    out.println("<html><body><ul>");
+                    out.println("<html>\n" +
+                            "    <body>\n" +
+                            "        <ul>");
                     for (String pokemon : pokedex.pokemans) ;
                     out.println("<li>" + pokemon + "</li>");
                 }
