@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Pokedex {
-    String[] pokemans = new String[1045];
+    Pokemon[] pokemans = new Pokemon[1045];
 
         public Pokedex(String filename) {
             File file = new File(filename);
@@ -15,7 +15,7 @@ public class Pokedex {
                 int i = 0;
                 while (scanner.hasNext()) {
                         Pokemon newPokemon = new Pokemon();
-                        String[] columns = scanner.next().split(regex: ",");
+                        String[] columns = scanner.next().split( ",");
                         newPokemon.setID(columns[0]);
                         newPokemon.setName(columns[2]);
                         newPokemon.setNumber(columns[1]);

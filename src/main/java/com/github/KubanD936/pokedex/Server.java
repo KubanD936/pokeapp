@@ -10,19 +10,23 @@ public class Server {
 
     public Server(int port) {
         try {
-        server = new ServerSocket(port);
+            server = new ServerSocket(port);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-        public void run (Pokedex pokedex){
+        public void run (Pokedex pokedex) {
             while (server.isBound()) {
                 try {
                     Socket socket = server.accept();
-                    PrintWriter out = new PrintWriter(socket.getOutputStream(), autoFlush: true);
+                    PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                     out.println("HTTP1.1 200 Ok");
                     out.println();
                     out.println("<html>\n" +
                             "    <body>\n" +
                             "        <ul>");
-                    for (String pokemon : pokedex.pokemans) ;
+                    for (Pokemon pokemon : pokedex.pokemans) {
                     out.println("<li>" + pokemon + "</li>");
                 }
                 out.println("</ul></body></html>");

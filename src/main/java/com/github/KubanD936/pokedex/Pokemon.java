@@ -51,6 +51,135 @@ public class Pokemon {
     public void setNumber(String number) {
         Number = number;
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getType1() {
+        return Type1;
+    }
+
+    public void setType1(String type1) {
+        Type1 = type1;
+    }
+
+    public String getType2() {
+        return Type2;
+    }
+
+    public void setType2(String type2) {
+        Type2 = type2;
+    }
+
+    public String getTotal() {
+        return Total;
+    }
+
+    public void setTotal(String total) {
+        Total = total;
+    }
+
+    public String getHp() {
+        return Hp;
+    }
+
+    public void setHp(String hp) {
+        Hp = hp;
+    }
+
+    public String getAtk() {
+        return Atk;
+    }
+
+    public void setAtk(String atk) {
+        Atk = atk;
+    }
+
+    public String getDef() {
+        return Def;
+    }
+
+    public void setDef(String def) {
+        Def = def;
+    }
+
+    public String getSpAtk() {
+        return SpAtk;
+    }
+
+    public void setSpAtk(String spAtk) {
+        SpAtk = spAtk;
+    }
+
+    public String getSpDef() {
+        return SpDef;
+    }
+
+    public void setSpDef(String spDef) {
+        SpDef = spDef;
+    }
+
+    public String getSpd() {
+        return Spd;
+    }
+
+    public void setSpd(String spd) {
+        Spd = spd;
+    }
+
+    public String getSpecies() {
+        return Species;
+    }
+
+    public void setSpecies(String species) {
+        Species = species;
+    }
+
+    public String getHeight() {
+        return Height;
+    }
+
+    public void setHeight(String height) {
+        Height = height;
+    }
+
+    public String getWeight() {
+        return Weight;
+    }
+
+    public void setWeight(String weight) {
+        Weight = weight;
+    }
+
+    public Pokemon() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "ID='" + ID + '\'' +
+                ", Number='" + Number + '\'' +
+                ", Name='" + Name + '\'' +
+                ", Type1='" + Type1 + '\'' +
+                ", Type2='" + Type2 + '\'' +
+                ", Total='" + Total + '\'' +
+                ", Hp='" + Hp + '\'' +
+                ", Atk='" + Atk + '\'' +
+                ", Def='" + Def + '\'' +
+                ", SpAtk='" + SpAtk + '\'' +
+                ", SpDef='" + SpDef + '\'' +
+                ", Spd='" + Spd + '\'' +
+                ", Species='" + Species + '\'' +
+                ", Height='" + Height + '\'' +
+                ", Weight='" + Weight + '\'' +
+                '}';
+    }
 }
 
 
